@@ -84,5 +84,12 @@ $('#player').on('ended', function() {
 
 
 
-// SLIDE ANIMATE
+// LOADER
+
+$(window).load(function() {
+	$(".se-pre-con").fadeOut("slow");;
+});
+
+
+
 
