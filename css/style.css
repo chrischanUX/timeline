@@ -302,9 +302,6 @@ background-size: 100%;
 }
 
 #section15 {
-/*	padding-top: 10%;
-	margin: auto;
-	text-align: center;*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -335,9 +332,7 @@ background-size: 100%;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.nav {
-/*  margin: 0 0 0px 30px;*/
-}
+
 .nav__counter {
   font-family: 'Domine', serif;
   font-size: 22px;
@@ -444,7 +439,6 @@ background-size: 100%;
 /*SPEAKER*/
 
 
-/* Give the player a height & width of 0. Otherwise the player is visible on mobile devices (tested on iPhone 5). */
 
 #player {
   height: 0;
@@ -487,16 +481,13 @@ background-size: 100%;
 /*IMAGE STACK*/
 
 .imgstack{
-/*  clear: both;*/
   position: absolute;
   display: block;
   width:100%;
-/*  padding-top: 150px;*/
   margin-left: auto;
   margin-right: auto;
   left: 45%;
   right: 0;
-/*  justify-content: center;*/
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
