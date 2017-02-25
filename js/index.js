@@ -19,14 +19,14 @@ $('a[href*=#]:not([href=#])').click(function() {
 // SPEAKER
 
 var getaudio = $('#player')[0];
-/* Get the audio from the player (using the player's ID), the [0] is necessary */
+/* Get the audio from the player (using the player's ID) */
 var mouseovertimer;
-/* Global variable for a timer. When the mouse is hovered over the speaker it will start playing after hovering for 1 second, if less than 1 second it won't play (incase you accidentally hover over the speaker) */
+/* When the mouse is hovered over the speaker it will start playing after hovering for 1 second, if less than 1 second it won't play (incase you accidentally hover over the speaker) */
 var audiostatus = 'off';
-/* Global variable for the audio's status (off or on). It's a bit crude but it works for determining the status. */
+/* Global variable for the audio's status (off or on). */
 
 $(document).on('mouseenter', '.speaker', function() {
- /* Bonus feature, if the mouse hovers over the speaker image for more than 1 second the audio will start playing */
+ /* If the mouse hovers over the speaker image for more than 1 second the audio will start playing */
  if (!mouseovertimer) {
    mouseovertimer = window.setTimeout(function() {
      mouseovertimer = null;
@@ -51,7 +51,6 @@ $(document).on('mouseleave', '.speaker', function() {
 });
 
 $(document).on('click touchend', '.speaker', function() {
- /* Touchend is necessary for mobile devices, click alone won't work */
  if (!$('.speaker').hasClass("speakerplay")) {
    if (audiostatus == 'off') {
      $('.speaker').addClass('speakerplay');
@@ -78,9 +77,6 @@ $('#player').on('ended', function() {
  audiostatus = 'off';
  /*Set the status back to off*/
 });
-
-
-// LIGHT BOX
 
 
 
