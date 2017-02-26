@@ -14,7 +14,11 @@
 
 
 
+/*HIDE SCROLL*/
 
+/*body.lock-scroll {
+  overflow: hidden;
+}*/
 
 
 /* DISABLE HORIZ SCROLL*/
@@ -22,11 +26,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-<<<<<<< HEAD
     overflow-y: hidden;
-=======
-	overflow-y: hidden;
->>>>>>> origin/master
 }
 
 
@@ -69,11 +69,7 @@ section {
 }
 
 .sectiontext {
-<<<<<<< HEAD
 	padding-top: 80px;
-=======
-	padding-top: 85px;
->>>>>>> origin/master
 	-ms-flex-item-align: start;
 	    align-self: flex-start;
 }
